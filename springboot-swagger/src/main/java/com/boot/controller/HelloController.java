@@ -24,4 +24,10 @@ public class HelloController {
 		return "hello "+name;
 	}
 	
+	
+	@ApiOperation(value="第三个接口",notes="第三个接口")
+	@GetMapping(value="/third")
+	String hey(String  name) {
+		return "hello "+name;
+	}
 }
