@@ -30,4 +30,10 @@ public class HelloController {
 	String hey(String  name) {
 		return "hello "+name;
 	}
+	
+	@ApiOperation(value="第四个接口",notes="第四个接口")
+	@GetMapping(value="/fourth")
+	String why(String  name) {
+		return "hello "+name;
+	}
 }
