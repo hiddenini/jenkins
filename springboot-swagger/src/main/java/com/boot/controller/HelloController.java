@@ -50,4 +50,10 @@ public class HelloController {
 	String bona(String  name) {
 		return "hello "+name;
 	}
+	
+	@ApiOperation(value="第六个接口",notes="第六个接口")
+	@GetMapping(value="/sixth")
+	String tgy(String  name) {
+		return "hello "+name;
+	}
 }
