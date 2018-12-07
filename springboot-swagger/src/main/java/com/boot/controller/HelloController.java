@@ -44,4 +44,10 @@ public class HelloController {
 	String hiddenini(String  name) {
 		return "hello "+name;
 	}
+	
+	@ApiOperation(value="第五个接口",notes="第五个接口")
+	@GetMapping(value="/fifth")
+	String bona(String  name) {
+		return "hello "+name;
+	}
 }
