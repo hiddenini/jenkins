@@ -56,4 +56,10 @@ public class HelloController {
 	String tgy(String  name) {
 		return "hello "+name;
 	}
+	
+	@ApiOperation(value="第八个接口",notes="第八个接口")
+	@GetMapping(value="/eighth")
+	String zjw(String  name) {
+		return "hello "+name;
+	}
 }
